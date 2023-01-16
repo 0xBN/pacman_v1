@@ -1,6 +1,41 @@
-# Getting Started with Create React App
+# Pacman (WIP)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Pacman clone using React and Tailwind CSS. I'm also using Context API to store the many states involved in this game. The game is currently working but the Ghost chasing algorithm is trained to get to Pacman's spot to "eat him". The Ghost can also be programmed to chase 1 or more squares away so the movement is more erratic.
+
+### Ghost Algorithm 
+ The ghost is chasing using a hueristic function, meaning it calculates the shortest path to pacman, not accounting for walls, and goes in that direction. I am currently working on another project for A* pathfinding which can improve the Ghost's chasing algorithm as it currently can get stuck behind obstacles because it will not go further away from pacman to get around obstacles.
+
+The ghost's movement passing over objects (dots, pills) is also tricky. It involves a queue for items it passes. This allows the yellow dots to not be "eaten" by the ghost.
+
+
+### Work in Progress
+This game can be improved by using Canvas API (HTML5) to make the animations more smooth. I am working on some projects to learn Canvas API to be able to use it here.
+The ghost chasing algorithm can be improved with A* pathfinding.
+
+## Deployed At: 
+
+
+## Demonstration
+
+<img src="https://github.com/0xBN/gif_pub/blob/main/pacman/desktop.gif?raw=true" width="500px"/>
+
+
+## Purpose
+Practice React custom hooks, using Context API.
+
+## Skills Demonstrated
+- HTML5 Canvas
+- ReactJS
+- Tailwind CSS
+
+
+## Tech Stack
+- [ React ](https://github.com/facebook/create-react-app): Frontend
+- [ Tailwind CSS](https://tailwindcss.com/): Styling
+- [Render](https://render.com/): Deployment
+  
+
+
 
 ## Available Scripts
 
@@ -11,13 +46,6 @@ In the project directory, you can run:
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
 
@@ -27,44 +55,9 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
 ### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+How to deploy documentation: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
