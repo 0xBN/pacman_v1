@@ -12,7 +12,7 @@ The ghost's movement passing over objects (dots, pills) is also tricky. It invol
 This game can be improved by using Canvas API (HTML5) to make the animations more smooth. I am working on some projects to learn Canvas API to be able to use it here.
 The ghost chasing algorithm can be improved with A* pathfinding.
 
-## Deployed At: 
+## Deployed At: https://pacman-react.onrender.com
 
 
 ## Demonstration
